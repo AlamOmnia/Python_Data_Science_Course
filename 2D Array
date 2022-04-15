@@ -1,0 +1,17 @@
+from array import *
+def Print(N):
+    for x in input:
+        for y in x:
+            print(y,end = " ")
+        print()
+
+def SUMAR(N):
+    sum=0
+    for row in range (len(input)):
+        for col in range(len(input[row])):
+            sum = sum + input[row][col]
+    return sum
+
+input = [[1,1,1,1], [2,2,2,2]]
+Print(input)
+print(SUMAR(input))
