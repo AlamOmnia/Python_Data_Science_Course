@@ -1,0 +1,21 @@
+def CountN(N):
+    i=1
+    j=0
+    listSum=[]
+    while i<=N:
+        j=j+i
+        listSum.append(j)
+        i=i+1
+    return listSum
+    
+def AvgN(N):
+    sumN=CountN(N)
+    AvgList=[]
+    i=0
+    for i in range(len(sumN)):
+        AvgList.append(sumN[i]/(i+1))
+        print (AvgList)
+    return(AvgList)
+    
+print( CountN(3))    
+print( AvgN(3))
